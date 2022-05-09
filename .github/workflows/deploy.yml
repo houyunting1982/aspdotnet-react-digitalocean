@@ -19,7 +19,7 @@ jobs:
     name: Build and Deploy to DO
     runs-on: ubuntu-18.04
     steps:          
-      Clone the repository
+      # Clone the repository
       - name: Checkout
         uses: actions/checkout@v2
       
