@@ -51,7 +51,7 @@ jobs:
           remote: $DIGITAL_OCEAN_TARGET
           host: $DIGITAL_OCEAN_HOST
           username: $DIGITAL_OCEAN_USER
-          privateKey: $DIGITAL_OCEAN_SSH_KEY
+          password: $DIGITAL_OCEAN_SSH_KEY
       
       # Run ssh command
       - name: Run ssh command
@@ -60,4 +60,4 @@ jobs:
           command: sudo systemctl restart aspdotnet-react-digitalocean
           host: $DIGITAL_OCEAN_HOST
           username: $DIGITAL_OCEAN_USER
-          privateKey: $DIGITAL_OCEAN_SSH_KEY
+          password: $DIGITAL_OCEAN_SSH_KEY
