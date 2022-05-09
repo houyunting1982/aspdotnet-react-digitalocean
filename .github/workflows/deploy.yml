@@ -11,10 +11,6 @@ env:
   # DIGITAL_OCEAN_USER: ${{ secrets.DIGITAL_OCEAN_USER }}
   # DIGITAL_OCEAN_SSH_KEY: ${{ secrets.DIGITAL_OCEAN_SSH_KEY }}
   # DIGITAL_OCEAN_TARGET: ${{ secrets.DIGITAL_OCEAN_TARGET }}
-  DIGITAL_OCEAN_HOST: ${{ '137.184.123.248' }}
-  DIGITAL_OCEAN_USER: ${{ 'root' }}
-  DIGITAL_OCEAN_SSH_KEY: ${{ 'k9Pippirunner' }}
-  DIGITAL_OCEAN_TARGET: ${{ '/home/app/' }}
 
   APP_NAME: ${{ 'aspdotnet-react-digitalocean' }}
 
@@ -28,9 +24,9 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           script: ls -a
-          host: '137.184.123.248'
-          username: 'root'
-          password: 'k9Pippirunner'
+          host: ${{ secrets.DIGITAL_OCEAN_HOST }}
+          username: ${{ secrets.DIGITAL_OCEAN_USER }}
+          password: ${{ secrets.DIGITAL_OCEAN_SSH_KEY }}
 
           
       # Clone the repository
