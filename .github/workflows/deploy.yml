@@ -39,4 +39,4 @@ jobs:
       
       # Dotnet Publish
       - name: Dotnet Publish
-        run: dotnet publish src -c Release -o deploy
+        run: dotnet publish -c Release -o deploy
