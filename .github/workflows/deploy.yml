@@ -25,12 +25,12 @@ jobs:
     steps:
 
       - name: Copy via SSH
-        uses: garygrossgarten/github-action-ssh@release
+        uses: appleboy/ssh-action@master
         with:
-          command: ls -a
+          script: ls -a
           host: $DIGITAL_OCEAN_HOST
           username: $DIGITAL_OCEAN_USER
-          passphrase: $DIGITAL_OCEAN_SSH_KEY
+          password: $DIGITAL_OCEAN_SSH_KEY
 
           
       # Clone the repository
