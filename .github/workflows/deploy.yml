@@ -28,9 +28,9 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           script: ls -a
-          host: $DIGITAL_OCEAN_HOST
-          username: $DIGITAL_OCEAN_USER
-          password: $DIGITAL_OCEAN_SSH_KEY
+          host: '137.184.123.248'
+          username: 'root'
+          password: 'k9Pippirunner'
 
           
       # Clone the repository
