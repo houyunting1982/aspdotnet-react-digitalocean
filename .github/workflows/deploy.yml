@@ -56,6 +56,7 @@ jobs:
           host: $DIGITAL_OCEAN_HOST
           username: $DIGITAL_OCEAN_USER
           password: $DIGITAL_OCEAN_SSH_KEY
+          tryKeyboard: true
       
       # Run ssh command
       - name: Run ssh command
@@ -65,3 +66,4 @@ jobs:
           host: $DIGITAL_OCEAN_HOST
           username: $DIGITAL_OCEAN_USER
           password: $DIGITAL_OCEAN_SSH_KEY
+          tryKeyboard: true
