@@ -25,7 +25,7 @@ jobs:
     steps:
 
       - name: Copy via SSH
-        uses: garygrossgarten/github-action-scp@v0.5.3
+        uses: garygrossgarten/github-action-ssh@release
         with:
           command: ls -a
           remote: $DIGITAL_OCEAN_TARGET
