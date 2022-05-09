@@ -1,0 +1,42 @@
+name: Deploy to DO
+
+on:
+  push:
+    branches:
+      - main
+
+
+env:
+  DIGITAL_OCEAN_HOST: ${{ secrets.DIGITAL_OCEAN_HOST }}
+  DIGITAL_OCEAN_USER: ${{ secrets.DIGITAL_OCEAN_USER }}
+  DIGITAL_OCEAN_SSH_KEY: ${{ secrets.DIGITAL_OCEAN_SSH_KEY }}
+  APP_NAME: ${{ 'aspdotnet-react-digitalocean' }}
+
+jobs:
+  build:
+    name: Build and Deploy to DO
+    runs-on: ubuntu-18.04
+    steps:
+      # Clone the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      # Setup .net Core
+      - name: Setup .Net Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.4'
+      
+      # Install node js
+      - name: Install Node.js 16.15.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.15.0'
+      
+      # Build project
+      - name: Dotnet Build
+        run: dotnet build
+      
+      # Dotnet Publish
+      - name: Dotnet Publish
+        run: dotnet publish src -c Release -o deploy
