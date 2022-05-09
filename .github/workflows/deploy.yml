@@ -28,7 +28,6 @@ jobs:
         uses: garygrossgarten/github-action-ssh@release
         with:
           command: ls -a
-          remote: $DIGITAL_OCEAN_TARGET
           host: $DIGITAL_OCEAN_HOST
           username: $DIGITAL_OCEAN_USER
           passphrase: $DIGITAL_OCEAN_SSH_KEY
