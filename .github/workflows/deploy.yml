@@ -57,7 +57,7 @@ jobs:
       - name: Run ssh command
         uses: garygrossgarten/github-action-ssh@v0.3.0
         with:
-          command: sudo systemctl restart aspdotnet-react-digitalocean; sudo systemctl restart aspdotnet-react-digitalocean
+          command: sudo systemctl restart aspdotnet-react-digitalocean
           host: ${{ secrets.DIGITAL_OCEAN_HOST }}
           username: ${{ secrets.DIGITAL_OCEAN_USER }}
           password: ${{ secrets.DIGITAL_OCEAN_SSH_KEY }}
