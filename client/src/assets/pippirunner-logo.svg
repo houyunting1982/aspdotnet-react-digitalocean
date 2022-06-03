@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="94.251 121.341 70.983 43.15" width="70.983" height="43.15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="path-2" d="M 102.944 158.975 C 118.096 152.867 128.329 149.812 138.406 147.13 C 145.537 146.305 150.779 146.872 156.229 147.207 C 160.436 148.26 166.35 147.883 168.519 147.883 C 172.11 148.013 174.923 147.344 177.884 147.344 L 178.325 147.256" style="fill: none;"/>
+  </defs>
+  <text style="fill: rgb(202, 97, 97); font-family: Arial, sans-serif; font-size: 28px; paint-order: fill markers; stroke: rgba(187, 218, 85, 0); white-space: pre;"><textPath xlink:href="#path-2">Pippi</textPath></text>
+</svg>
