@@ -1,0 +1,85 @@
+.yth__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+}
+
+.yth__cta-content p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    /* or 250% */
+    color: #0e0e0e;
+}
+
+.yth__cta-content h3 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 45px;
+    /* or 188% */
+    color: #000000;
+}
+
+.yth__cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.yth__cta-button button {
+    background: #000000;
+    border-radius: 40px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.yth__cta-button button:active,
+.yth__cta-button button:hover {
+    background: gray;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 650px) {
+    .yth__cta {
+        flex-direction: column;
+    }
+    .yth__cta-button {
+        margin: 2rem 0 0;
+        width: 100%;
+    }
+    .yth__cta-button button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .yth__cta {
+        margin: 4rem 2rem;
+    }
+    .yth__cta-content h3 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .yth__cta-content button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
